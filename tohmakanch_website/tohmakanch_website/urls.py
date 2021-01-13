@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import index
 from api.views import (BiographyViewSet,
                        PoemViewSet,
                        ArticleViewSet, 
@@ -23,6 +24,7 @@ from api.views import (BiographyViewSet,
 
 
 urlpatterns = [
+    path('', index),
     path('admin/', admin.site.urls),
     path('api/biography', BiographyViewSet.as_view({
         'get': 'list',
