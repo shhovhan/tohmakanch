@@ -23,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'pmk=(s19!5z#&3vl8m7em-f@$am@h^by&2nch9u_bb^be7*x8_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*.tohmakanch.am']
 
 CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -136,7 +135,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '{}/static/'.format(BASE_DIR)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '{}/media/'.format(BASE_DIR)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
