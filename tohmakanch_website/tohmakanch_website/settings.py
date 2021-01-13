@@ -58,7 +58,7 @@ ROOT_URLCONF = 'tohmakanch_website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['tohmakanch_website'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,9 +131,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+STATICFILES_DIRS = [
+    '{}/tohmakanch_website/static/'.format(BASE_DIR)
+]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '{}/static/'.format(BASE_DIR)
 
-STATIC_URL = '/media/'
-STATIC_ROOT = '{}/media/'.format(BASE_DIR)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '{}/media/'.format(BASE_DIR)
