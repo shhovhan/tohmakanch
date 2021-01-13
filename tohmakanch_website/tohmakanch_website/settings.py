@@ -25,7 +25,7 @@ SECRET_KEY = 'pmk=(s19!5z#&3vl8m7em-f@$am@h^by&2nch9u_bb^be7*x8_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*.tohmakanch.am']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'tohmakanch.am', '136.243.2.176']
 
 CSRF_COOKIE_SECURE = True
 # Application definition
