@@ -25,9 +25,9 @@ SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = DEBUG_MODE
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'tohmakanch.am', '136.243.2.176']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.tohmakanch.am', 'tohmakanch.am', '136.243.2.176']
 
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 # Application definition
 
 INSTALLED_APPS = [
