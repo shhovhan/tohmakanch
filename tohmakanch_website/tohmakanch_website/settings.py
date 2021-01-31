@@ -137,8 +137,8 @@ STATICFILES_DIRS = [
     '{}/tohmakanch_website/static/'.format(BASE_DIR)
 ]
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = STATIC_URL
+STATIC_ROOT = STATIC_ROOT_PATH
 
 
 MEDIA_URL = '/media/'
