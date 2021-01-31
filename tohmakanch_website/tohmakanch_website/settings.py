@@ -137,7 +137,7 @@ STATICFILES_DIRS = [
     '{}/tohmakanch_website/static/'.format(BASE_DIR)
 ]
 
-STATIC_URL = STATIC_URL
+STATIC_URL = '/static/'
 STATIC_ROOT = STATIC_ROOT_PATH
 
 
